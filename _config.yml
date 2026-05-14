@@ -1,8 +1,8 @@
 title: Mashe Construction
 description: Custom home building and construction guides
 theme: minima
-baseurl: "/mashestate-construction"
-url: "https://siavashsed.github.io"
+baseurl: ""
+url: "https://construction.mashestate.com"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 show_excerpts: true
