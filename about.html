@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Mash Construction</title>
+<meta name="description" content="Licensed general contractor insights for property owners and real estate investors.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  --bg:#121212;--bg2:#1a1a1a;--sur:#222222;
+  --pri:#ea580c;--pri2:#c2410c;
+  --txt:#f5f0e8;--mut:#9c8870;--brd:#2e2820;
+  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
+body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7}
+a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
+[data-region=nav]{background:var(--bg2);border-bottom:3px solid var(--pri);padding:16px 44px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99}
+.fg-mark{font-size:20px;font-weight:900;color:var(--txt);text-decoration:none;text-transform:uppercase}
+.fg-mark span{color:var(--pri)}.fg-links{display:flex;gap:28px}.fg-links a{font-size:13px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.abt-top{background:var(--bg2);border-bottom:1px solid var(--brd);padding:56px 44px;display:flex;align-items:center;gap:32px;border-left:4px solid var(--pri)}
+.abt-avi{width:72px;height:72px;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:#000;flex-shrink:0}
+.abt-top-name{font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:4px}
+.abt-top-title{font-size:13px;color:var(--pri);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.abt-body{max-width:740px;margin:0 auto;padding:52px 44px}
+.abt-block{margin-bottom:36px}
+.abt-block-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--pri);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.abt-block-label::after{content:'';flex:1;height:1px;background:var(--brd)}
+.abt-block p{color:var(--mut);line-height:1.85;margin-bottom:14px}
+.fg-nl-box{background:var(--sur);border-left:3px solid var(--pri);padding:24px;margin-top:8px}
+.fg-nl-box h3{font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.2px;margin-bottom:8px}
+.fg-nl-box p{color:var(--mut);font-size:13px;margin-bottom:16px}
+.fg-sub-form2{display:flex;gap:10px;max-width:420px}
+.fg-sub-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:4px;padding:10px 14px;color:var(--txt);font-size:13px;outline:none;transition:border-color .2s}
+.fg-sub-input:focus{border-color:var(--pri)}.fg-sub-input::placeholder{color:var(--mut)}
+.fg-sub-btn{background:var(--pri);color:#000;border:none;border-radius:4px;padding:10px 18px;font-size:13px;font-weight:800;cursor:pointer;text-transform:uppercase;white-space:nowrap}
+.fg-sub-ok{color:var(--pri);font-weight:700;font-size:13px;padding:6px 0}
+[data-region=footer]{padding:22px 44px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:20px}
+.fg-foot-copy,.fg-foot-nav a{font-size:12px;color:var(--mut)}.fg-foot-nav{display:flex;gap:20px}
+@media(max-width:600px){[data-region=nav]{padding:12px 16px}.abt-top{padding:36px 16px;flex-direction:column;gap:16px}.abt-body{padding:36px 16px}.fg-sub-form2{flex-direction:column}[data-region=footer]{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div data-region="nav">
+  <a href="/" class="fg-mark">Mash<span> Construction</span></a>
+  <div class="fg-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<div class="abt-top">
+  <div class="abt-avi">TM</div>
+  <div><div class="abt-top-name">Tom Mash</div><div class="abt-top-title">Licensed General Contractor</div></div>
+</div>
+<div class="abt-body">
+  <div class="abt-block">
+    <div class="abt-block-label">Background</div>
+    <p>Twenty-two years as a licensed GC and I've watched property owners lose hundreds of thousands to bad bids, unnecessary permits, wrong sequencing, and contractors who took shortcuts they knew the client wouldn't notice.</p><p>Mash Construction is the resource I give to clients before they start a project. Better-informed owners make better decisions — and my job gets easier when they do.</p>
+  </div>
+  <div class="abt-block">
+    <div class="abt-block-label">This Site</div>
+    <p>Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.</p>
+  </div>
+  <div class="fg-nl-box">
+    <h3>The Build Brief</h3>
+    <p>Monthly construction advice from a GC who has seen every way a project goes wrong.</p>
+    <form id="abt-nl" onsubmit="nlSub(event)">
+      <div class="fg-sub-form2">
+        <input type="email" class="fg-sub-input" placeholder="your@email.com" required>
+        <button type="submit" class="fg-sub-btn">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div data-region="footer">
+  <span class="fg-foot-copy">© Mash Construction</span>
+  <div class="fg-foot-nav"><a href="/">Home</a><a href="/about.html">About</a></div>
+</div>
+<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="fg-sub-ok">✓ Subscribed.</div>';}</script>
+</body></html>
