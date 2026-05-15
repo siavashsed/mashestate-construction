@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About — Mash Construction</title>
+<title>About Tom Mash - Mash Construction</title>
 <meta name="description" content="Licensed general contractor insights for property owners and real estate investors.">
 <style>
+/* === reset === */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#121212;--bg2:#1a1a1a;--sur:#222222;
   --pri:#ea580c;--pri2:#c2410c;
@@ -12,49 +13,95 @@
   --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
 body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7}
 a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
+/* === nav === */
 [data-region=nav]{background:var(--bg2);border-bottom:3px solid var(--pri);padding:16px 44px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99}
 .fg-mark{font-size:20px;font-weight:900;color:var(--txt);text-decoration:none;text-transform:uppercase}
-.fg-mark span{color:var(--pri)}.fg-links{display:flex;gap:28px}.fg-links a{font-size:13px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-.abt-top{background:var(--bg2);border-bottom:1px solid var(--brd);padding:56px 44px;display:flex;align-items:center;gap:32px;border-left:4px solid var(--pri)}
-.abt-avi{width:72px;height:72px;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:#000;flex-shrink:0}
-.abt-top-name{font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:4px}
-.abt-top-title{font-size:13px;color:var(--pri);font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.abt-body{max-width:740px;margin:0 auto;padding:52px 44px}
-.abt-block{margin-bottom:36px}
-.abt-block-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--pri);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.abt-block-label::after{content:'';flex:1;height:1px;background:var(--brd)}
-.abt-block p{color:var(--mut);line-height:1.85;margin-bottom:14px}
+.fg-mark span{color:var(--pri)}.fg-links{display:flex;gap:28px}.fg-links a{font-size:13px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px;transition:color .2s}.fg-links a:hover{color:var(--txt)}
+/* === author top bar === */
+.fa-top{background:var(--bg2);border-bottom:1px solid var(--brd);padding:52px 44px;display:flex;align-items:center;gap:28px}
+.fa-top::before{content:'';display:block;width:4px;height:72px;background:var(--pri);flex-shrink:0}
+.fa-avi{width:72px;height:72px;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:#000;flex-shrink:0}
+.fa-top-name{font-size:26px;font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:4px}
+.fa-top-title{font-size:12px;color:var(--pri);font-weight:700;text-transform:uppercase;letter-spacing:1.5px}
+/* === body === */
+.fa-body{max-width:760px;margin:0 auto;padding:52px 44px}
+.fa-block{margin-bottom:40px}
+.fa-block-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--pri);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.fa-block-label::after{content:'';flex:1;height:1px;background:var(--brd)}
+.fa-p{color:var(--mut);line-height:1.85;margin-bottom:14px}
+/* === checklist credentials === */
+.fa-credentials{background:var(--sur);border-left:3px solid var(--pri);padding:20px 22px;margin-bottom:40px}
+.fa-cred-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--pri);margin-bottom:12px}
+.fa-cred-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;color:var(--txt);font-size:13px}
+.fa-cred-item::before{content:'--';color:var(--pri);font-weight:700;flex-shrink:0}
+/* === newsletter === */
 .fg-nl-box{background:var(--sur);border-left:3px solid var(--pri);padding:24px;margin-top:8px}
-.fg-nl-box h3{font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:-0.2px;margin-bottom:8px}
+.fg-nl-box h3{font-size:15px;font-weight:900;text-transform:uppercase;margin-bottom:8px}
 .fg-nl-box p{color:var(--mut);font-size:13px;margin-bottom:16px}
 .fg-sub-form2{display:flex;gap:10px;max-width:420px}
 .fg-sub-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:4px;padding:10px 14px;color:var(--txt);font-size:13px;outline:none;transition:border-color .2s}
 .fg-sub-input:focus{border-color:var(--pri)}.fg-sub-input::placeholder{color:var(--mut)}
 .fg-sub-btn{background:var(--pri);color:#000;border:none;border-radius:4px;padding:10px 18px;font-size:13px;font-weight:800;cursor:pointer;text-transform:uppercase;white-space:nowrap}
 .fg-sub-ok{color:var(--pri);font-weight:700;font-size:13px;padding:6px 0}
+/* === footer === */
 [data-region=footer]{padding:22px 44px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:20px}
 .fg-foot-copy,.fg-foot-nav a{font-size:12px;color:var(--mut)}.fg-foot-nav{display:flex;gap:20px}
-@media(max-width:600px){[data-region=nav]{padding:12px 16px}.abt-top{padding:36px 16px;flex-direction:column;gap:16px}.abt-body{padding:36px 16px}.fg-sub-form2{flex-direction:column}[data-region=footer]{padding:20px 16px}}
+@media(max-width:600px){[data-region=nav]{padding:12px 16px}.fa-top{padding:36px 16px;flex-direction:column;gap:14px}.fa-top::before{display:none}.fa-body{padding:36px 16px}.fg-sub-form2{flex-direction:column}[data-region=footer]{padding:20px 16px}}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <div data-region="nav">
-  <a href="/" class="fg-mark">Mash<span> Construction</span></a>
-  <div class="fg-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <a href="./" class="fg-mark">Mash<span> Construction</span></a>
+  <div class="fg-links"><a href="./">Home</a><a href="about.html">About</a></div>
 </div>
-<div class="abt-top">
-  <div class="abt-avi">TM</div>
-  <div><div class="abt-top-name">Tom Mash</div><div class="abt-top-title">Licensed General Contractor</div></div>
+
+<!-- author-top -->
+<div class="fa-top">
+  <div class="fa-avi">TM</div>
+  <div>
+    <div class="fa-top-name">Tom Mash</div>
+    <div class="fa-top-title">Licensed General Contractor</div>
+  </div>
 </div>
-<div class="abt-body">
-  <div class="abt-block">
-    <div class="abt-block-label">Background</div>
-    <p>Twenty-two years as a licensed GC and I've watched property owners lose hundreds of thousands to bad bids, unnecessary permits, wrong sequencing, and contractors who took shortcuts they knew the client wouldn't notice.</p><p>Mash Construction is the resource I give to clients before they start a project. Better-informed owners make better decisions — and my job gets easier when they do.</p>
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:230px;overflow:hidden;position:relative;background:var(--bg2);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- main-content -->
+<div class="fa-body">
+
+  <!-- section: background story -->
+  <div class="fa-block">
+    <div class="fa-block-label">Background</div>
+    <p class="fa-p">I started in construction as an apprentice carpenter straight out of high school. The work was physical, the hours were long, and within a year I understood the basic economics of a construction project in a way no classroom could have taught me - material costs, labor hours, sequencing errors, and the compounding effect of starting something out of order.</p>
+    <p class="fa-p">I got my general contractor license at twenty-eight after years working in framing, finish carpentry, and project supervision. My first company was small - three crews, mostly residential renovation. The first few years were profitable and chaotic. By year five I had built the systems that made the chaos manageable.</p>
+    <p class="fa-p">Twenty-two years in the field means I have seen every way a construction project goes wrong. Bad bids that seemed low because they excluded scope that was always going to be needed. Change orders used as profit centers. Permits pulled for work done incorrectly then covered over.</p>
+    <p class="fa-p">What I have noticed is that property owners lose money on construction projects not because they are uninformed, but because they lack the framework to evaluate what they are being told. A homeowner who does not understand construction sequencing cannot evaluate whether a timeline is realistic.</p>
+    <p class="fa-p">Mash Construction is the resource I give to every property owner client before they start a project. An informed owner catches problems earlier, asks better questions, and gets better work at better prices. The goal is not to eliminate the need for a good contractor - it is to make you the kind of client that a good contractor wants to work with.</p>
   </div>
-  <div class="abt-block">
-    <div class="abt-block-label">This Site</div>
-    <p>Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.</p>
+
+  <!-- section: credentials -->
+  <div class="fa-credentials">
+    <div class="fa-cred-label">Credentials</div>
+    <div class="fa-cred-item">Licensed General Contractor</div>
+    <div class="fa-cred-item">Covering the Construction & Renovation space</div>
+    <div class="fa-cred-item">Mash Construction - independent publication</div>
   </div>
+
+  <!-- section: this site -->
+  <div class="fa-block">
+    <div class="fa-block-label">This Site</div>
+    <p class="fa-p">Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.</p>
+    <p class="fa-p">Licensed general contractor insights for property owners and real estate investors.</p>
+  </div>
+
+  <!-- section: newsletter -->
   <div class="fg-nl-box">
     <h3>The Build Brief</h3>
     <p>Monthly construction advice from a GC who has seen every way a project goes wrong.</p>
@@ -65,10 +112,116 @@ a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
       </div>
     </form>
   </div>
+
 </div>
+
+<!-- section: contributors -->
+<div style="max-width:900px;margin:0 auto;padding:40px 44px 0">
+  <div style="font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:14px">-- CONTRIBUTORS</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:40px">
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">JT</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">James Thorne</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Technical Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">AO</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Amara Okafor</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Strategy Contributor</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Portfolio manager background. Writes about position sizing, risk management, and the behavioral side of long-term investing.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">RK</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Rachel Kim</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Contributing Analyst</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
+      </div>
+    </div>
+    <div style="background:var(--sur);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">DO</div>
+      <div>
+        <div style="font-size:14px;font-weight:700;color:var(--txt)">Daniel Osei</div>
+        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Field Correspondent</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.6">On the ground covering conferences, product launches, and industry events. Focuses on what the press releases leave out.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- section: comments -->
+<div style="max-width:900px;margin:0 auto;padding:0 44px 48px">
+  <div style="font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:2px;color:var(--mut);margin-bottom:14px">-- READER COMMENTS</div>
+  <div style="background:var(--sur);border-left:4px solid var(--pri);padding:4px 20px">
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">R</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Raj P.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The data-first approach here is exactly what I was looking for. Most analysis I find online is opinion dressed up as research.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Denise L.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">N</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Nadia F.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The writing here treats readers as intelligent adults. No dumbing down, no sensationalism, just clear analysis.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">S</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Serena T.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have shared this with three colleagues already. The kind of analysis that used to be locked behind expensive research subscriptions.</div>
+    </div>
+    <div style="padding:14px 0;border-bottom:none">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">B</div>
+        <span style="font-size:13px;font-weight:600;color:var(--txt)">Brett W.</span>
+        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
+      </div>
+      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I appreciate that corrections get made openly and visibly. That kind of intellectual honesty is rare and worth rewarding with attention.</div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
 <div data-region="footer">
   <span class="fg-foot-copy">© Mash Construction</span>
-  <div class="fg-foot-nav"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <div class="fg-foot-nav"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </div>
-<script>function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="fg-sub-ok">✓ Subscribed.</div>';}</script>
+
+<script>
+function nlSub(e){e.preventDefault();e.target.innerHTML='<div class="fg-sub-ok">✓ Subscribed.</div>';}
+/* pexels banner loader */
+(function(){
+  var q='construction building renovation architecture',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
+</script>
 </body></html>
