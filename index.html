@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mash Construction — What Your Contractor Won't Tell You</title>
+<title>Mash Construction - What Your Contractor Won't Tell You</title>
 <meta name="description" content="Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -49,19 +49,44 @@ a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <div data-region="nav">
-  <a href="/" class="fg-mark">Mash<span> Construction</span></a>
-  <div class="fg-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <a href="./" class="fg-mark">Mash<span> Construction</span></a>
+  <div class="fg-links"><a href="./">Home</a><a href="about.html">About</a></div>
 </div>
+
+<!-- hero -->
 <div data-region="header">
   <div class="fg-eyebrow">Construction & Renovation</div>
   <h1>What Your Contractor Won't Tell You</h1>
   <p>Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.</p>
 </div>
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:210px;overflow:hidden;position:relative;background:var(--bg2);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- author-teaser -->
+<div style="background:var(--sur);border-bottom:1px solid var(--brd);padding:20px 44px;display:flex;align-items:center;gap:16px;">
+  <div style="width:38px;height:38px;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#000;flex-shrink:0;">TM</div>
+  <div>
+    <div style="font-size:13px;font-weight:800;color:var(--txt);text-transform:uppercase;letter-spacing:.5px;">Tom Mash</div>
+    <div style="font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;">Licensed General Contractor</div>
+  </div>
+  <a href="about.html" style="margin-left:auto;font-size:11px;color:var(--pri);font-weight:800;text-transform:uppercase;letter-spacing:.5px;">Full Bio →</a>
+</div>
+
+<!-- articles -->
 <div data-region="articles">
   <div class="fg-section-title">Latest Articles</div>
   <div class="fg-tiles" id="fg-tiles"></div>
 </div>
+
+<!-- newsletter -->
 <div data-region="subscribe">
   <div class="fg-sub-inner">
     <h2>The Build Brief</h2>
@@ -74,11 +99,15 @@ a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
     </form>
   </div>
 </div>
+
+<!-- footer -->
 <div data-region="footer">
-  <span class="fg-foot-copy">© Mash Construction — Licensed general contractor insights for property owners and real estate investors.</span>
-  <div class="fg-foot-nav"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <span class="fg-foot-copy">© Mash Construction - Licensed general contractor insights for property owners and real estate investors.</span>
+  <div class="fg-foot-nav"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </div>
+
 <script>
+/* load articles tiles */
 async function loadPosts(){
   const el=document.getElementById('fg-tiles');
   try{
@@ -88,7 +117,7 @@ async function loadPosts(){
       <div class="fg-tile-tag">Construction & Renovation</div>
       <h3>${p.title}</h3>
       <p>${p.meta_description||''}</p>
-      <div class="fg-tile-foot"><span class="fg-tile-date">${p.date_iso||''}</span><a class="fg-tile-read" href="./${p.slug||'#'}">Read →</a></div>
+      <div class="fg-tile-foot"><span class="fg-tile-date">${p.date_iso||''}</span><a class="fg-tile-read" href="./${p.slug||'#'}/">Read →</a></div>
     </div>`).join('');
   }catch(e){
     el.innerHTML='<div class="fg-tile"><div class="fg-tile-tag">Coming Soon</div><h3>Articles publishing shortly</h3><p>Check back soon.</p></div>';
@@ -96,5 +125,19 @@ async function loadPosts(){
 }
 function nlSub(e){e.preventDefault();document.getElementById('fg-nl').innerHTML='<div class="fg-sub-ok">✓ You're on the list.</div>';}
 loadPosts();
+/* pexels banner loader */
+(function(){
+  var q='construction building renovation architecture',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
 </script>
 </body></html>
