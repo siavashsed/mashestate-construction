@@ -31,7 +31,7 @@ img{max-width:100%;display:block}
 .nav-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:60px;gap:32px}
 .nav-logo{font-family:var(--cond);font-size:20px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
 .nav-logo span{color:var(--orange)}
-.nav-links{display:flex;gap:0;flex:1}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
 .nav-links a{font-family:var(--cond);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:0 16px;height:60px;display:flex;align-items:center;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s}
 .nav-links a:hover{color:var(--text);border-color:var(--orange)}
 .nav-quote{margin-left:auto;background:var(--orange);color:#fff;font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;transition:background .15s}
@@ -347,6 +347,15 @@ const PLACEHOLDER_ARTS=[
   {title:"How to Manage a Renovation Without Being On-Site Every Day",slug:"renovation-management",cat:"renovation",excerpt:"The check-in cadence, the documentation habit, and the three decisions you should never let contractors make alone.",mins:8},
 ];
 
+const IMGS=[
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75',
+  'https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=600&q=75',
+  'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=75',
+  'https://images.unsplash.com/photo-1513828583688-c4ba8fa8064e?w=600&q=75',
+  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=75',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75',
+];
+
 let arts=[];
 let activeFilter="all";
 
@@ -359,9 +368,9 @@ function setFilter(f){
 function renderGrid(){
   const g=document.getElementById("artGrid");
   const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
-  g.innerHTML=filtered.slice(0,6).map(a=>`
+  g.innerHTML=filtered.slice(0,6).map((a,i)=>`
     <a href="./${a.slug}/" class="art-card">
-      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="art-card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div class="art-card-body">
         <div class="art-cat">${a.cat}</div>
         <h3 class="art-title">${a.title}</h3>
@@ -372,9 +381,9 @@ function renderGrid(){
 }
 
 function renderMore(){
-  document.getElementById("moreGrid").innerHTML=(arts.length>6?arts.slice(6):arts.slice(3,6)).map(a=>`
+  document.getElementById("moreGrid").innerHTML=(arts.length>6?arts.slice(6):arts.slice(3,6)).map((a,i)=>`
     <a href="./${a.slug}/" class="art-card">
-      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="art-card-img"><img src="${IMGS[(i+3)%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div class="art-card-body">
         <div class="art-cat">${a.cat}</div>
         <h3 class="art-title">${a.title}</h3>
