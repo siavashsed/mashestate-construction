@@ -1,175 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mash Construction - What Your Contractor Won't Tell You</title>
-<meta name="description" content="Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MashEstate Construction - Build It Right</title>
+<meta name="description" content="Construction guides, renovation planning, contractor advice, and building cost intelligence for homeowners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#121212;--bg2:#1a1a1a;--sur:#222222;
-  --pri:#ea580c;--pri2:#c2410c;
-  --txt:#f5f0e8;--mut:#9c8870;--brd:#2e2820;
-  --fh:system-ui,sans-serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.7}
-a{color:var(--pri);text-decoration:none}a:hover{opacity:.85}
-[data-region=nav]{background:var(--bg2);border-bottom:3px solid var(--pri);padding:16px 44px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99}
-.fg-mark{font-size:20px;font-weight:900;color:var(--txt);letter-spacing:-0.5px;text-decoration:none;text-transform:uppercase}
-.fg-mark span{color:var(--pri)}
-.fg-links{display:flex;gap:28px}.fg-links a{font-size:13px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px;transition:color .2s}.fg-links a:hover{color:var(--txt)}
-[data-region=header]{padding:72px 44px 56px;background:var(--bg2);border-bottom:1px solid var(--brd);position:relative;overflow:hidden}
-[data-region=header]::before{content:'';position:absolute;left:0;top:0;width:4px;height:100%;background:var(--pri)}
-.fg-eyebrow{font-size:11px;font-weight:800;color:var(--pri);text-transform:uppercase;letter-spacing:4px;margin-bottom:18px}
-[data-region=header] h1{font-size:clamp(26px,3.5vw,48px);font-weight:900;line-height:1.1;letter-spacing:-0.5px;max-width:660px;margin-bottom:16px}
-[data-region=header] p{font-size:15px;color:var(--mut);max-width:540px;line-height:1.85}
-[data-region=articles]{padding:56px 44px;max-width:1160px;margin:0 auto}
-.fg-section-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--pri);margin-bottom:24px;display:flex;align-items:center;gap:12px}
-.fg-section-title::after{content:'';flex:1;height:1px;background:var(--brd)}
-.fg-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
-.fg-tile{background:var(--bg2);border-left:3px solid var(--pri);padding:22px 20px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s}
-.fg-tile:hover{border-color:var(--pri2)}
-.fg-tile-tag{font-size:10px;font-weight:800;color:var(--pri);text-transform:uppercase;letter-spacing:2px}
-.fg-tile h3{font-size:16px;font-weight:700;line-height:1.35;color:var(--txt)}
-.fg-tile p{font-size:13px;color:var(--mut);line-height:1.75;flex:1}
-.fg-tile-foot{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
-.fg-tile-date{font-size:11px;color:var(--mut)}
-.fg-tile-read{font-size:12px;font-weight:700;color:var(--pri)}
-[data-region=subscribe]{background:var(--sur);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:64px 44px}
-.fg-sub-inner{max-width:600px}
-[data-region=subscribe] h2{font-size:clamp(20px,2.5vw,32px);font-weight:900;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:8px}
-[data-region=subscribe] p{color:var(--mut);font-size:14px;margin-bottom:24px;line-height:1.8}
-.fg-sub-form{display:flex;gap:10px;max-width:480px}
-.fg-sub-input{flex:1;background:var(--bg);border:1px solid var(--brd);border-radius:4px;padding:12px 16px;color:var(--txt);font-size:14px;outline:none;transition:border-color .2s}
-.fg-sub-input:focus{border-color:var(--pri)}.fg-sub-input::placeholder{color:var(--mut)}
-.fg-sub-btn{background:var(--pri);color:#000;border:none;border-radius:4px;padding:12px 22px;font-size:14px;font-weight:800;cursor:pointer;text-transform:uppercase;letter-spacing:.5px;transition:background .2s;white-space:nowrap}
-.fg-sub-btn:hover{background:var(--pri2)}.fg-sub-ok{color:var(--pri);font-weight:700;font-size:14px;padding:8px 0}
-[data-region=footer]{padding:22px 44px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.fg-foot-copy{font-size:12px;color:var(--mut)}
-.fg-foot-nav{display:flex;gap:20px}.fg-foot-nav a{font-size:12px;color:var(--mut)}
-@media(max-width:700px){[data-region=nav]{padding:12px 16px}[data-region=header]{padding:48px 16px 36px}[data-region=articles]{padding:36px 16px}[data-region=subscribe]{padding:48px 16px}.fg-sub-form{flex-direction:column}[data-region=footer]{padding:20px 16px;flex-direction:column;text-align:center}}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0c0d0e;
+  --bg2:#141618;
+  --bg3:#1c1f22;
+  --orange:#f97316;
+  --orange2:#ea6c0a;
+  --text:#e8e6e0;
+  --muted:#8a8880;
+  --border:#242628;
+  --cond:'Oswald',sans-serif;
+  --body:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+.site-nav{background:var(--bg2);border-bottom:2px solid var(--orange);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:60px;gap:32px}
+.nav-logo{font-family:var(--cond);font-size:20px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
+.nav-logo span{color:var(--orange)}
+.nav-links{display:flex;gap:0;flex:1}
+.nav-links a{font-family:var(--cond);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:0 16px;height:60px;display:flex;align-items:center;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s}
+.nav-links a:hover{color:var(--text);border-color:var(--orange)}
+.nav-quote{margin-left:auto;background:var(--orange);color:#fff;font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;transition:background .15s}
+.nav-quote:hover{background:var(--orange2)}
+
+/* HERO - industrial bold */
+.hero{background:var(--bg2);border-bottom:1px solid var(--border)}
+.hero-in{max-width:1280px;margin:0 auto;padding:56px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.hero-text{}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
+.hero-tag::before{content:"";width:20px;height:2px;background:var(--orange)}
+.hero-h1{font-family:var(--cond);font-size:clamp(52px,6.5vw,86px);font-weight:700;line-height:.9;letter-spacing:.02em;text-transform:uppercase;color:var(--text);margin-bottom:16px}
+.hero-h1 em{color:var(--orange);font-style:normal;display:block}
+.hero-desc{font-size:15px;color:var(--muted);max-width:460px;margin-bottom:32px;line-height:1.8}
+.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:32px}
+.hero-fact{background:var(--bg);padding:20px 16px;text-align:center}
+.hero-fact-num{font-family:var(--cond);font-size:36px;font-weight:700;color:var(--orange);line-height:1;display:block}
+.hero-fact-label{font-size:11px;color:var(--muted);font-weight:500;margin-top:4px;line-height:1.4}
+.hero-btns{display:flex;gap:12px}
+.btn-orange{background:var(--orange);color:#fff;font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 24px;transition:background .15s}
+.btn-orange:hover{background:var(--orange2)}
+.btn-ghost{border:1px solid var(--border);color:var(--muted);font-family:var(--cond);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:11px 24px;transition:all .15s}
+.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
+.hero-right{}
+.phase-list{display:flex;flex-direction:column;gap:0;background:var(--bg3);border:1px solid var(--border)}
+.phase-head{background:var(--orange);padding:12px 20px}
+.phase-head-label{font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.phase-item{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);align-items:center;transition:background .15s;cursor:pointer}
+.phase-item:last-child{border-bottom:none}
+.phase-item:hover{background:rgba(249,115,22,.05)}
+.phase-num{font-family:var(--cond);font-size:20px;font-weight:700;color:var(--orange);line-height:1;text-align:center}
+.phase-title{font-family:var(--cond);font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--text);display:block;transition:color .15s}
+.phase-item:hover .phase-title{color:var(--orange)}
+.phase-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+/* CATEGORY TABS */
+.cat-tabs{background:var(--bg2);border-bottom:1px solid var(--border)}
+.cat-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.cat-in::-webkit-scrollbar{display:none}
+.cat-tab{font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 20px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;white-space:nowrap;transition:all .15s}
+.cat-tab:hover,.cat-tab.active{color:var(--text);border-color:var(--orange)}
+
+/* ARTICLE SECTIONS */
+.section{padding:52px 0}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.sec-hd{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.sec-title{font-family:var(--cond);font-size:clamp(22px,3vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text)}
+.sec-line{flex:1;height:1px;background:var(--border)}
+.sec-see{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);white-space:nowrap;transition:opacity .15s}
+.sec-see:hover{opacity:.7}
+
+/* ARTICLE GRID */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)}
+.art-card{background:var(--bg2);overflow:hidden;transition:background .15s}
+.art-card:hover{background:var(--bg3)}
+.art-card-img{aspect-ratio:16/9;background:var(--bg3);overflow:hidden}
+.art-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s;filter:brightness(.85)}
+.art-card:hover .art-card-img img{transform:scale(1.03);filter:brightness(1)}
+.art-card-body{padding:20px}
+.art-cat{font-family:var(--cond);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:7px}
+.art-title{font-family:var(--cond);font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;line-height:1.2;color:var(--text);margin-bottom:8px;transition:color .15s}
+.art-card:hover .art-title{color:var(--orange)}
+.art-excerpt{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:12px}
+.art-meta{font-family:var(--cond);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* COST SECTION */
+.cost-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:52px 0}
+.cost-in{max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cost-text{}
+.cost-eyebrow{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+.cost-title{font-family:var(--cond);font-size:clamp(28px,4vw,44px);font-weight:700;text-transform:uppercase;letter-spacing:.04em;line-height:.95;color:var(--text);margin-bottom:16px}
+.cost-body{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:24px}
+.cost-table{background:var(--bg);border:1px solid var(--border)}
+.cost-table-head{background:var(--orange);display:grid;grid-template-columns:1fr 1fr 1fr;padding:12px 16px}
+.cost-table-head span{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+.cost-row{display:grid;grid-template-columns:1fr 1fr 1fr;padding:14px 16px;border-bottom:1px solid var(--border);align-items:center}
+.cost-row:last-child{border-bottom:none}
+.cost-row:hover{background:var(--bg2)}
+.cost-row-label{font-size:13px;font-weight:600;color:var(--text)}
+.cost-row-val{font-family:var(--cond);font-size:14px;font-weight:700;color:var(--orange)}
+.cost-row-note{font-size:11px;color:var(--muted)}
+
+/* CHECKLIST */
+.checklist-section{background:var(--orange);padding:52px 0}
+.checklist-in{max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.checklist-text{}
+.checklist-eyebrow{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:10px}
+.checklist-title{font-family:var(--cond);font-size:clamp(32px,4.5vw,52px);font-weight:700;text-transform:uppercase;letter-spacing:.03em;line-height:.95;color:#fff;margin-bottom:14px}
+.checklist-body{font-size:14px;color:rgba(255,255,255,.8);line-height:1.8;margin-bottom:24px}
+.checklist-btn{background:#fff;color:var(--orange);font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:13px 24px;display:inline-block;transition:opacity .15s}
+.checklist-btn:hover{opacity:.9}
+.checklist-list{display:flex;flex-direction:column;gap:0}
+.checklist-item{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:14px;color:rgba(255,255,255,.85)}
+.checklist-item:last-child{border-bottom:none}
+.check-icon{width:20px;height:20px;background:rgba(255,255,255,.2);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.check-icon svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2.5}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg2);border-top:1px solid var(--border);padding:56px 0}
+.nl-in{max-width:480px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-title{font-family:var(--cond);font-size:clamp(28px,4vw,44px);font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--text);line-height:.95;margin-bottom:10px}
+.nl-title span{color:var(--orange)}
+.nl-sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+.nl-form{display:flex;gap:0;border:1px solid var(--border)}
+.nl-input{flex:1;background:transparent;border:none;color:var(--text);font-size:14px;font-family:var(--body);padding:12px 16px;outline:none}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{background:var(--orange);color:#fff;font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 22px;border:none;cursor:pointer;transition:background .15s}
+.nl-btn:hover{background:var(--orange2)}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:48px 0 24px}
+.footer-in{max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{font-family:var(--cond);font-size:20px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:8px}
+.footer-logo span{color:var(--orange)}
+.footer-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.footer-head{font-family:var(--cond);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.footer-links a{font-size:13px;color:var(--muted);transition:color .15s}
+.footer-links a:hover{color:var(--orange)}
+.footer-bottom{max-width:1280px;margin:0 auto;padding:24px 24px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:var(--muted)}
+
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .phase-list{display:none}
+  .art-grid{grid-template-columns:1fr 1fr}
+  .cost-in{grid-template-columns:1fr}
+  .checklist-in{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .art-grid{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<!-- nav -->
-<div data-region="nav">
-  <a href="./" class="fg-mark">Mash<span> Construction</span></a>
-  <div class="fg-links"><a href="./">Home</a><a href="about.html">About</a></div>
-</div>
+<nav class="site-nav">
+  <div class="nav-in">
+    <a href="./" class="nav-logo">MashEstate <span>Build</span></a>
+    <div class="nav-links">
+      <a href="./">Renovation</a>
+      <a href="./">New Builds</a>
+      <a href="./">Contractors</a>
+      <a href="./">Costs</a>
+      <a href="./">DIY</a>
+    </div>
+    <a href="./" class="nav-quote">Get a Guide</a>
+  </div>
+</nav>
 
-<!-- hero -->
-<div data-region="header">
-  <div class="fg-eyebrow">Construction & Renovation</div>
-  <h1>What Your Contractor Won't Tell You</h1>
-  <p>Contractor-level renovation knowledge for property owners who want to stop being taken advantage of.</p>
-</div>
-
-<!-- pexels-banner -->
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:210px;overflow:hidden;position:relative;background:var(--bg2);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<!-- about section -->
-<div style="background:#222222;border-top:1px solid #2e2820;border-bottom:1px solid #2e2820;padding:40px">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-size:10px;color:#ea580c;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px">// about this publication</div>
-    <div style="display:grid;grid-template-columns:60px 1fr;gap:20px;align-items:start;margin-bottom:24px">
-      <div style="width:56px;height:56px;border-radius:50%;background:#ea580c;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#000;flex-shrink:0;letter-spacing:-1px">TM</div>
-      <div>
-        <div style="font-size:16px;font-weight:700;color:#f5f0e8;margin-bottom:2px">Tom Mash</div>
-        <div style="font-size:12px;color:#ea580c;margin-bottom:14px;font-weight:600">Licensed General Contractor</div>
-        <p style="font-size:14px;color:#9c8870;line-height:1.85;margin-bottom:12px">Twenty-two years as a licensed GC and I've watched property owners lose hundreds of thousands to bad bids, unnecessary permits, wrong sequencing, and contractors who took shortcuts they knew the client wouldn't notice.</p>
-        <p style="font-size:14px;color:#9c8870;line-height:1.85">Mash Construction is the resource I give to clients before they start a project. Better-informed owners make better decisions - and my job gets easier when they do.</p>
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-text">
+      <div class="hero-tag">Construction Intelligence</div>
+      <h1 class="hero-h1">Build it<em>right.</em></h1>
+      <p class="hero-desc">Renovation planning, contractor vetting, cost breakdowns, and project guides for homeowners who want to know exactly what they're getting into before they start.</p>
+      <div class="hero-facts">
+        <div class="hero-fact"><span class="hero-fact-num">78%</span><span class="hero-fact-label">of renovations go over budget without planning</span></div>
+        <div class="hero-fact"><span class="hero-fact-num">600+</span><span class="hero-fact-label">Project guides published</span></div>
+        <div class="hero-fact"><span class="hero-fact-num">Free</span><span class="hero-fact-label">Cost estimator tools</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="./" class="btn-orange">Start Your Project</a>
+        <a href="./" class="btn-ghost">Cost Guides</a>
       </div>
     </div>
-    <a href="about.html" style="display:inline-block;border:1px solid #ea580c;color:#ea580c;padding:8px 20px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px;transition:all .2s">Full bio →</a>
+    <div class="hero-right">
+      <div class="phase-list">
+        <div class="phase-head"><span class="phase-head-label">Project Phases - Start Here</span></div>
+        <div class="phase-item"><span class="phase-num">01</span><span><span class="phase-title">Planning + Permits</span><span class="phase-sub">Scope, timeline, approvals</span></span></div>
+        <div class="phase-item"><span class="phase-num">02</span><span><span class="phase-title">Finding Contractors</span><span class="phase-sub">Vetting, bidding, contracts</span></span></div>
+        <div class="phase-item"><span class="phase-num">03</span><span><span class="phase-title">Budgeting + Costs</span><span class="phase-sub">Real numbers, not estimates</span></span></div>
+        <div class="phase-item"><span class="phase-num">04</span><span><span class="phase-title">During Construction</span><span class="phase-sub">Oversight, change orders</span></span></div>
+        <div class="phase-item"><span class="phase-num">05</span><span><span class="phase-title">Finishing + Punch List</span><span class="phase-sub">Sign-off, warranty, retention</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cat-tabs">
+  <div class="cat-in">
+    <div class="cat-tab active" onclick="setFilter('all')">All</div>
+    <div class="cat-tab" onclick="setFilter('renovation')">Renovation</div>
+    <div class="cat-tab" onclick="setFilter('new-build')">New Build</div>
+    <div class="cat-tab" onclick="setFilter('contractor')">Contractors</div>
+    <div class="cat-tab" onclick="setFilter('costs')">Cost Guides</div>
+    <div class="cat-tab" onclick="setFilter('diy')">DIY</div>
+    <div class="cat-tab" onclick="setFilter('permits')">Permits</div>
   </div>
 </div>
 
-<!-- articles -->
-<div data-region="articles">
-  <div class="fg-section-title">Latest Articles</div>
-  <div class="fg-tiles" id="fg-tiles"></div>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">Project Guides</h2>
+      <div class="sec-line"></div>
+      <a href="./" class="sec-see">All guides &rarr;</a>
+    </div>
+    <div class="art-grid" id="artGrid"></div>
+  </div>
+</section>
 
-<!-- newsletter -->
-<div data-region="subscribe">
-  <div class="fg-sub-inner">
-    <h2>The Build Brief</h2>
-    <p>Monthly construction advice from a GC who has seen every way a project goes wrong.</p>
-    <form id="fg-nl" onsubmit="nlSub(event)">
-      <div class="fg-sub-form">
-        <input type="email" class="fg-sub-input" placeholder="your@email.com" required>
-        <button type="submit" class="fg-sub-btn">Subscribe</button>
-      </div>
+<section class="cost-section">
+  <div class="cost-in">
+    <div class="cost-text">
+      <div class="cost-eyebrow">Know Before You Build</div>
+      <h2 class="cost-title">Real Cost Benchmarks</h2>
+      <p class="cost-body">Contractor quotes feel arbitrary because most homeowners don't have a reference point. These are 2025 national averages from real projects - use them to spot outliers fast.</p>
+      <a href="./" class="btn-orange" style="display:inline-block;margin-top:8px">Full Cost Database &rarr;</a>
+    </div>
+    <div class="cost-table">
+      <div class="cost-table-head"><span>Project</span><span>Cost Range</span><span>Scope</span></div>
+      <div class="cost-row"><span class="cost-row-label">Kitchen Remodel</span><span class="cost-row-val">$25k - $75k</span><span class="cost-row-note">Mid-range full gut</span></div>
+      <div class="cost-row"><span class="cost-row-label">Bathroom Addition</span><span class="cost-row-val">$15k - $40k</span><span class="cost-row-note">Full bath, existing space</span></div>
+      <div class="cost-row"><span class="cost-row-label">Basement Finish</span><span class="cost-row-val">$30k - $70k</span><span class="cost-row-note">Per 1,000 sqft</span></div>
+      <div class="cost-row"><span class="cost-row-label">Deck/Patio</span><span class="cost-row-val">$8k - $25k</span><span class="cost-row-note">300sqft composite deck</span></div>
+      <div class="cost-row"><span class="cost-row-label">Roof Replacement</span><span class="cost-row-val">$10k - $20k</span><span class="cost-row-note">Asphalt shingle, 2000sqft</span></div>
+      <div class="cost-row"><span class="cost-row-label">HVAC System</span><span class="cost-row-val">$6k - $14k</span><span class="cost-row-note">Central AC + furnace</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="checklist-section">
+  <div class="checklist-in">
+    <div class="checklist-text">
+      <div class="checklist-eyebrow">Before You Hire Anyone</div>
+      <h2 class="checklist-title">The Contractor Vetting Checklist</h2>
+      <p class="checklist-body">Most renovation disasters come from skipping due diligence at the hiring stage. This 10-point checklist takes 20 minutes and saves tens of thousands.</p>
+      <a href="./" class="checklist-btn">Download Full Checklist</a>
+    </div>
+    <div class="checklist-list">
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Verify license and insurance before any conversation about price</div>
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Get minimum three bids - anything lower is a red flag</div>
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Call actual references, not just ask for them</div>
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Never pay more than 30% upfront</div>
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Get everything in writing including change order process</div>
+      <div class="checklist-item"><div class="check-icon"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Pull permits yourself or verify contractor will</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">More Guides</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="art-grid" id="moreGrid"></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="nl-in">
+    <h2 class="nl-title">Build smart.<span> Start free.</span></h2>
+    <p class="nl-sub">Weekly project guides, cost updates, and contractor advice in your inbox.</p>
+    <form class="nl-form" onsubmit="return false">
+      <input class="nl-input" type="email" placeholder="your@email.com">
+      <button class="nl-btn" type="submit">Subscribe</button>
     </form>
   </div>
-</div>
+</section>
 
-<!-- footer -->
-<div data-region="footer">
-  <span class="fg-foot-copy">© Mash Construction - Licensed general contractor insights for property owners and real estate investors.</span>
-  <div class="fg-foot-nav"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
+<footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-logo">MashEstate <span>Build</span></div>
+      <p class="footer-desc">Construction intelligence for homeowners who want to know what they're getting into before they sign.</p>
+    </div>
+    <div>
+      <div class="footer-head">Projects</div>
+      <div class="footer-links">
+        <a href="./">Kitchen Remodels</a>
+        <a href="./">Bathroom Additions</a>
+        <a href="./">Basement Finishing</a>
+        <a href="./">New Construction</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Hiring</div>
+      <div class="footer-links">
+        <a href="./">Vet a Contractor</a>
+        <a href="./">Read a Bid</a>
+        <a href="./">Contract Terms</a>
+        <a href="./">Permits Guide</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Site</div>
+      <div class="footer-links">
+        <a href="./about/">About</a>
+        <a href="./">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 MashEstate Construction. All rights reserved.</div>
+    <div class="footer-copy">Build it right.</div>
+  </div>
+</footer>
 
 <script>
-/* load articles tiles */
-async function loadPosts(){
-  const el=document.getElementById('fg-tiles');
-  try{
-    const r=await fetch('./articles.json');if(!r.ok)throw 0;
-    const posts=await r.json();if(!posts.length)throw 0;
-    el.innerHTML=posts.slice(0,9).map(p=>`<div class="fg-tile" style="padding:0;overflow:hidden;">
-      ${p.image?`<a href="./${p.slug||'#'}/"><img src="${p.image}" alt="${p.title}" style="width:100%;height:170px;object-fit:cover;display:block;"></a>`:''}
-      <div style="padding:20px 22px;">
-        <div class="fg-tile-tag">Construction & Renovation</div>
-        <h3>${p.title}</h3>
-        <p>${p.meta_description||''}</p>
-        <div class="fg-tile-foot"><span class="fg-tile-date">${p.date_iso||''}</span><a class="fg-tile-read" href="./${p.slug||'#'}/">Read →</a></div>
-      </div>
-    </div>`).join('');
-  }catch(e){
-    el.innerHTML='<div class="fg-tile"><div class="fg-tile-tag">Coming Soon</div><h3>Articles publishing shortly</h3><p>Check back soon.</p></div>';
-  }
+const PLACEHOLDER_ARTS=[
+  {title:"Kitchen Remodel: The Full Cost Breakdown No One Gives You",slug:"kitchen-remodel-cost",cat:"costs",excerpt:"Cabinets, countertops, appliances, labor, permits - the real numbers from 2025 projects across four cities.",mins:11},
+  {title:"How to Vet a General Contractor Before You Sign Anything",slug:"vet-general-contractor",cat:"contractor",excerpt:"License verification, insurance certificates, reference calls, and the three questions that reveal character.",mins:8},
+  {title:"How to Read a Contractor Bid: Line by Line",slug:"read-contractor-bid",cat:"contractor",excerpt:"Allowances, exclusions, change order clauses - what to question in every bid before you compare prices.",mins:7},
+  {title:"The Permit Process Explained: When You Need One and What Happens If You Skip It",slug:"building-permit-guide",cat:"permits",excerpt:"Skipping a permit isn't just illegal - it can void your insurance and kill a sale years later.",mins:6},
+  {title:"Basement Finishing: A Complete Guide to Scope, Cost, and Timeline",slug:"basement-finishing-guide",cat:"renovation",excerpt:"Egress windows, vapor barriers, electrical panels - the checklist most homeowners discover too late.",mins:10},
+  {title:"New Build vs. Renovation: The Real Cost Comparison",slug:"new-build-vs-renovation",cat:"new-build",excerpt:"The calculation changes dramatically based on your lot, local labor costs, and how much of the existing structure is salvageable.",mins:9},
+  {title:"The DIY Renovations Worth Doing (And the Ones That Will Cost You More)",slug:"diy-renovation-guide",cat:"diy",excerpt:"Painting, simple tile, demo work - fine. Electrical, structural, waterproofing - not fine. Where the line is.",mins:7},
+  {title:"How to Manage a Renovation Without Being On-Site Every Day",slug:"renovation-management",cat:"renovation",excerpt:"The check-in cadence, the documentation habit, and the three decisions you should never let contractors make alone.",mins:8},
+];
+
+let arts=[];
+let activeFilter="all";
+
+function setFilter(f){
+  activeFilter=f;
+  document.querySelectorAll(".cat-tab").forEach(t=>t.classList.toggle("active",t.textContent.toLowerCase()===f||(f==="all"&&t.textContent==="All")));
+  renderGrid();
 }
-function nlSub(e){e.preventDefault();document.getElementById('fg-nl').innerHTML='<div class="fg-sub-ok">✓ You're on the list.</div>';}
-loadPosts();
-/* banner loader: pexels → unsplash → picsum */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  var SOURCES=['pexels', 'unsplash'];
-  var Q=encodeURIComponent('construction building renovation architecture');
-  var FALLBACK='https://picsum.photos/seed/64/1400/400';
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  function tryUnsplash(){
-    var uk=localStorage.getItem('unsplashKey');
-    if(!uk){showImg(FALLBACK,'');return;}
-    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
-      .then(function(r){return r.json();}).then(function(d){
-        var p=Array.isArray(d)?d[0]:d;
-        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){showImg(FALLBACK,'');});
-  }
-  function tryPexels(){
-    var k=localStorage.getItem('pexelsKey');
-    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
-    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
-  }
-  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
-  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-  else{showImg(FALLBACK,'');}
-})();
+
+function renderGrid(){
+  const g=document.getElementById("artGrid");
+  const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
+  g.innerHTML=filtered.slice(0,6).map(a=>`
+    <a href="./${a.slug}/" class="art-card">
+      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="art-card-body">
+        <div class="art-cat">${a.cat}</div>
+        <h3 class="art-title">${a.title}</h3>
+        <p class="art-excerpt">${a.excerpt}</p>
+        <div class="art-meta">${a.mins} min read</div>
+      </div>
+    </a>`).join("");
+}
+
+function renderMore(){
+  document.getElementById("moreGrid").innerHTML=(arts.length>6?arts.slice(6):arts.slice(3,6)).map(a=>`
+    <a href="./${a.slug}/" class="art-card">
+      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="art-card-body">
+        <div class="art-cat">${a.cat}</div>
+        <h3 class="art-title">${a.title}</h3>
+        <p class="art-excerpt">${a.excerpt}</p>
+        <div class="art-meta">${a.mins} min read</div>
+      </div>
+    </a>`).join("");
+}
+
+async function load(){
+  try{const r=await fetch("./articles.json");if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}}catch{arts=PLACEHOLDER_ARTS;}
+  renderGrid();
+  renderMore();
+}
+load();
 </script>
-</body></html>
+</body>
+</html>
