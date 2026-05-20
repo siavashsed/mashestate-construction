@@ -242,8 +242,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .calc-result small{font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .calc-amount{font-family:var(--display);font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--amber);line-height:1.05;margin:14px 0 6px}
 .calc-result p{font-size:13px;color:var(--muted)}
-.calc-note{margin-top:18px;font-size:12px;color:var(--faint);border-top:1px solid var(--border);padding-top:16px}
-@media(max-width:980px){.calc-wrap{grid-template-columns:1fr}}
+.calc-note{margin-top:18px;font-size:12px;color:var(--faint);border-top:1px solid var(--border);padding-top:16px}@media(max-width:980px){.calc-wrap{grid-template-columns:1fr}}
 
 /* TOOLS TABS */
 .tools-tabs{display:flex;gap:6px;padding:6px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;margin:0 auto 32px;max-width:680px;flex-wrap:wrap;justify-content:center}
@@ -252,8 +251,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .tools-tab:hover{color:var(--text)}
 .tools-tab.active{background:var(--amber);color:#1a1206}
 .tool-panel{display:none}
-.tool-panel.active{display:block;animation:fadeIn .35s ease}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tool-panel.active{display:block;animation:fadeIn .35s ease}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 /* CHECKLIST TOOL */
 .check-wrap{display:grid;grid-template-columns:1fr .9fr;gap:28px;align-items:stretch}
@@ -295,8 +293,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .tl-phase b{font-family:var(--display);font-size:13.5px;font-weight:700;color:var(--text)}
 .tl-bar{grid-column:1/-1;height:7px;border-radius:5px;background:var(--bg);overflow:hidden;position:relative}
 .tl-bar-fill{height:100%;background:linear-gradient(90deg,var(--amber),#e0901a);border-radius:5px;transition:width .5s ease}
-.tl-phase span{font-family:var(--display);font-size:12px;font-weight:700;color:var(--muted)}
-@media(max-width:980px){.check-wrap,.tl-wrap{grid-template-columns:1fr}}
+.tl-phase span{font-family:var(--display);font-size:12px;font-weight:700;color:var(--muted)}@media(max-width:980px){.check-wrap,.tl-wrap{grid-template-columns:1fr}}
 
 /* PROCESS / PHASES SECTION */
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:phase}
@@ -329,8 +326,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .donut-center span{font-family:var(--display);font-size:38px;font-weight:900;color:var(--amber);line-height:1;margin-top:6px}
 .budget-legend{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:24px;position:relative}
 .budget-legend div{display:flex;align-items:center;gap:8px;font-family:var(--display);font-size:12px;font-weight:600;color:var(--muted)}
-.legend-dot{width:11px;height:11px;border-radius:3px;flex-shrink:0}
-@media(max-width:980px){.process-grid{grid-template-columns:1fr 1fr}.budget-wrap{grid-template-columns:1fr}}
+.legend-dot{width:11px;height:11px;border-radius:3px;flex-shrink:0}@media(max-width:980px){.process-grid{grid-template-columns:1fr 1fr}.budget-wrap{grid-template-columns:1fr}}
 
 /* PITFALLS */
 .pit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -357,22 +353,18 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .tm-foot{display:flex;align-items:center;gap:13px;border-top:1px solid var(--border);padding-top:18px}
 .tm-avatar{width:46px;height:46px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:15px;font-weight:800;color:#1a1206;letter-spacing:.02em}
 .tm-meta b{display:block;font-family:var(--display);font-size:14px;font-weight:700;letter-spacing:.01em}
-.tm-meta small{display:block;font-size:11.5px;color:var(--faint);font-family:var(--display);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
-@media(max-width:980px){.pit-grid,.tm-grid{grid-template-columns:1fr 1fr}}
+.tm-meta small{display:block;font-size:11.5px;color:var(--faint);font-family:var(--display);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}@media(max-width:980px){.pit-grid,.tm-grid{grid-template-columns:1fr 1fr}}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media(max-width:980px){
+.reveal.in{opacity:1;transform:none}@media(max-width:980px){
   .hero-in,.story-in,.author-in{grid-template-columns:1fr;gap:44px}
   .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr 1fr}
   .stats-in{grid-template-columns:1fr 1fr}
   .footer-in{grid-template-columns:1fr 1fr}
   .author-in{text-align:center}
   .author-photo{margin:0 auto}
-}
-@media(max-width:620px){
+}@media(max-width:620px){
   .nav-links,.nav-phone,.topbar-right{display:none}
   .topbar-in{justify-content:center}
   .nav-in{height:64px;gap:14px}
@@ -383,8 +375,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
   .footer-in{grid-template-columns:1fr 1fr}
   .faq-a p{padding-left:24px}
   .tools-tab{min-width:0}
-}
-</style>
+}</style>
 </head>
 <body data-page-depth="0">
 <div class="topbar">
@@ -400,7 +391,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
   <div class="wrap nav-in">
     <a href="./" class="nav-logo">
       <span class="mark-box">
-        <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M4 28V13L16 5l12 8v15" stroke="#f5a524" stroke-width="2.6" stroke-linejoin="round"/><path d="M12 28v-9h8v9" stroke="#edeef0" stroke-width="2.6" stroke-linejoin="round"/></svg>
+        <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M4 28V13L16 5l12 8v15" stroke="#f5a524" stroke-width="2.6" stroke-linejoin="round"/></svg>
       </span>
       <span class="logo-text">
         <span>MashEstate</span>
@@ -430,8 +421,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 <style>
 .ab-page{background:var(--bg);color:var(--text);font-family:var(--body)}
 .ab-rev{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
-.ab-rev.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.ab-rev{opacity:1;transform:none;transition:none}}
+.ab-rev.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.ab-rev{opacity:1;transform:none;transition:none}}
 .ab-wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 .ab-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
 .ab-eyebrow::before{content:"";width:24px;height:2px;background:var(--amber)}
@@ -498,17 +488,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
 .ab-cta-box p{position:relative;color:var(--muted);max-width:480px;margin:0 auto 26px}
 .ab-btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#1a1206;font-family:var(--display);font-size:13px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:15px 30px;border-radius:8px;transition:transform .15s,box-shadow .15s}
 .ab-btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(245,165,36,.6)}
-.ab-btn svg{width:16px;height:16px}
-
-@media(max-width:920px){
+.ab-btn svg{width:16px;height:16px}@media(max-width:920px){
   .ab-story{grid-template-columns:1fr;gap:38px}
   .ab-grid3{grid-template-columns:1fr}
   .ab-author{grid-template-columns:1fr;text-align:center}
   .ab-author-photo{margin:0 auto}
   .ab-author-info p{margin-left:auto;margin-right:auto}
-}
-@media(max-width:600px){.ab-sec{padding:58px 0}.ab-cta-box{padding:42px 22px}}
-</style>
+}@media(max-width:600px){.ab-sec{padding:58px 0}.ab-cta-box{padding:42px 22px}}</style>
 
 <main class="ab-page">
   <section class="ab-hero">
@@ -613,7 +599,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
     <div class="footer-in">
       <div>
         <div class="footer-logo">
-          <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M4 28V13L16 5l12 8v15" stroke="#f5a524" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 28v-9h8v9" stroke="#edeef0" stroke-width="2.4" stroke-linejoin="round"/></svg>
+          <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M4 28V13L16 5l12 8v15" stroke="#f5a524" stroke-width="2.4" stroke-linejoin="round"/></svg>
           MashEstate <span>Construction</span>
         </div>
         <p class="footer-desc">Construction and renovation intelligence for homeowners who want to know exactly what they are getting into before they sign.</p>
@@ -675,7 +661,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
       '<stop offset="0" stop-color="'+p[0]+'"/><stop offset="1" stop-color="'+p[1]+'"/></linearGradient></defs>'+
       '<rect width="400" height="200" fill="url(#g'+i+')"/>'+
       '<g stroke="rgba(245,165,36,.22)" stroke-width="1" fill="none">'+
-      '<path d="M0 150h400M0 110h400M0 70h400"/><path d="M80 0v200M160 0v200M240 0v200M320 0v200"/></g>'+
+      '<path d="M0 150h400M0 110h400M0 70h400"/></g>'+
       '<path d="M60 150V95l50-32 50 32v55" stroke="#f5a524" stroke-width="2.4" fill="none" stroke-linejoin="round"/>'+
       '<path d="M95 150v-30h30v30" stroke="rgba(237,238,240,.55)" stroke-width="2.4" fill="none"/>'+
       '<circle cx="300" cy="58" r="26" stroke="rgba(245,165,36,.4)" stroke-width="2" fill="none"/>'+
@@ -685,7 +671,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
   function esc(s){var d=document.createElement('div');d.textContent=String(s==null?'':s);return d.innerHTML;}
   function emptyState(){
     grid.innerHTML='<div class="art-empty">'+
-      '<svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13" stroke-linejoin="round"/><path d="M9 21v-7h6v7" stroke-linejoin="round"/></svg>'+
+      '<svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13" stroke-linejoin="round"/></svg>'+
       '<h3>New guides are on the way</h3>'+
       '<p>Our build desk is finishing the next round of project guides. Subscribe below and we will send them the moment they publish.</p></div>';
   }
