@@ -15,7 +15,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   },
   {
     "title": "How the 2020 IRC Code Cycle Changed Residential Construction Whether You Were Ready or Not",
@@ -33,7 +34,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   },
   {
     "title": "How COVID-19 Shut Down Construction Sites in 2020 and What It Actually Cost Us",
@@ -53,7 +55,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   },
   {
     "title": "How to Manage a Construction Project Remotely Without Losing Control of It",
@@ -70,7 +73,8 @@
     "posted_iso": "2026-05-29",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   },
   {
     "title": "The 2019 OSHA Silica Enforcement Deadline That Finally Had Real Teeth",
@@ -89,6 +93,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   }
 ]
