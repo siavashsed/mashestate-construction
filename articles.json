@@ -54,5 +54,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "How to Manage a Construction Project Remotely Without Losing Control of It",
+    "slug": "manage-construction-project-remotely",
+    "meta_description": "A licensed GC shares what actually works when managing a construction project remotely - tools, accountability systems, and hard-won lessons.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/8487766/pexels-photo-8487766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "mckinsey.com",
+      "bls.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2019 OSHA Silica Enforcement Deadline That Finally Had Real Teeth",
+    "slug": "osha-silica-rule-2019-construction",
+    "meta_description": "In 2019, OSHA's crystalline silica rule hit full enforcement for construction. Here's what it meant on the ground and why contractors couldn't ignore it.",
+    "date": "July 25, 2019",
+    "date_iso": "2019-07-25",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/15087186/pexels-photo-15087186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "osha.gov",
+      "cdc.gov",
+      "bls.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
