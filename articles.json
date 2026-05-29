@@ -1,0 +1,61 @@
+[
+  {
+    "title": "The 2023 IRC Energy Code Update Changed What 'Code Minimum' Means for Good",
+    "slug": "2023-irc-energy-code-update",
+    "meta_description": "The 2023 IRC energy code update raised the bar on insulation and air sealing. Here's what it means for contractors and homeowners right now.",
+    "date": "January 02, 2023",
+    "date_iso": "2023-01-02",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/9788371/pexels-photo-9788371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "iccsafe.org",
+      "energycodes.gov",
+      "nahb.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How the 2020 IRC Code Cycle Changed Residential Construction Whether You Were Ready or Not",
+    "slug": "2020-irc-code-cycle-residential-construction",
+    "meta_description": "The 2021 IRC adoption cycle began in 2020. Here's what it meant for contractors, builders, and rental property owners on the ground.",
+    "date": "March 02, 2020",
+    "date_iso": "2020-03-02",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/37635943/pexels-photo-37635943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bls.gov",
+      "iccsafe.org",
+      "energy.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How COVID-19 Shut Down Construction Sites in 2020 and What It Actually Cost Us",
+    "slug": "covid-19-construction-shutdown-2020",
+    "meta_description": "A 2020 retrospective on how COVID-19 disrupted construction jobsites, what it cost contractors, and why the industry's response set a lasting precedent.",
+    "date": "December 29, 2020",
+    "date_iso": "2020-12-29",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/12008040/pexels-photo-12008040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "agc.org",
+      "cdc.gov",
+      "nahb.org",
+      "iccsafe.org",
+      "bls.gov"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  }
+]
