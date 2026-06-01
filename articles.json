@@ -95,5 +95,41 @@
       "en"
     ],
     "category": "Contractor Vetting"
+  },
+  {
+    "title": "Why Material Costs Matter More Than Labor in 2025 (And What to Do About It)",
+    "slug": "material-costs-vs-labor-2025",
+    "meta_description": "In 2025, material costs are eating your construction budget faster than labor ever did. A licensed GC explains why and what you can do right now.",
+    "date": "June 01, 2026",
+    "date_iso": "2026-06-01",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/3089685/pexels-photo-3089685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bls.gov",
+      "agc.org"
+    ],
+    "posted_iso": "2026-06-01",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2023 IRC Energy Code Update Changed Construction's Baseline Forever",
+    "slug": "2023-irc-energy-code-update-contractors",
+    "meta_description": "The 2023 IRC energy code update rewrote what 'code minimum' means. Here's what it actually cost contractors and owners on the ground.",
+    "date": "October 12, 2023",
+    "date_iso": "2023-10-12",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/6633326/pexels-photo-6633326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "eia.gov",
+      "nahb.org",
+      "energy.gov"
+    ],
+    "posted_iso": "2026-06-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
