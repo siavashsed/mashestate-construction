@@ -111,7 +111,8 @@
     "posted_iso": "2026-06-01",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Budget & Costs"
   },
   {
     "title": "The 2023 IRC Energy Code Update Changed Construction's Baseline Forever",
@@ -130,6 +131,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Contractor Vetting"
   }
 ]
