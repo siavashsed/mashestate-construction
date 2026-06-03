@@ -555,7 +555,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:64px 0 2
   var all=[],activeCat=_initialCat,query=_initialQ,page=1;
   if(_initialQ){searchEl.value=_initialQ;}
   function escapeHtml(t){return String(t==null?'':t).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});}
-  function slugHref(p){return './'+encodeURIComponent(p.slug||'').replace(/%2F/g,'/')+'/';}
+  function slugHref(p){return '../'+encodeURIComponent(p.slug||'').replace(/%2F/g,'/')+'/';}
   // Fuzzy match: a card category like "Europe" should match articles
   // tagged "Europe", "European Travel", or any cat containing the token.
   function catMatches(articleCat, filterCat){
