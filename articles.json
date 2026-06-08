@@ -133,5 +133,44 @@
       "en"
     ],
     "category": "Contractor Vetting"
+  },
+  {
+    "title": "The Renovation Order That Prevents Costly Rework (A Contractor's Honest Guide)",
+    "slug": "renovation-order-avoid-expensive-rework",
+    "meta_description": "Get the renovation sequence right the first time. Licensed GC Tom Mash explains the exact order that avoids expensive rework on any remodel project.",
+    "date": "June 08, 2026",
+    "date_iso": "2026-06-08",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/4567374/pexels-photo-4567374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jchs.harvard.edu",
+      "energy.gov",
+      "certainteed.com"
+    ],
+    "posted_iso": "2026-06-08",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2024 DOE Appliance Efficiency Rules: What Every Contractor Needs to Know Right Now",
+    "slug": "doe-2024-appliance-efficiency-standards",
+    "meta_description": "The DOE's 2024 appliance efficiency standards changed what you can install. Here's what it means for your builds and renovations today.",
+    "date": "July 12, 2024",
+    "date_iso": "2024-07-12",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/27134985/pexels-photo-27134985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "acca.org",
+      "irs.gov",
+      "iea.org",
+      "regulations.doe.gov"
+    ],
+    "posted_iso": "2026-06-08",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
