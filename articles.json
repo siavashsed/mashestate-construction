@@ -172,5 +172,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Lumber Hit $1,700 Per Thousand Board Feet in 2021. Here's What Actually Happened",
+    "slug": "lumber-price-spike-2021",
+    "meta_description": "Lumber prices hit historic highs in 2021, wrecking project budgets across the country. Tom Mash breaks down what drove it and what contractors did about it.",
+    "date": "March 27, 2021",
+    "date_iso": "2021-03-27",
+    "author": "Tom Mash",
+    "image": "https://images.pexels.com/photos/8817836/pexels-photo-8817836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmegroup.com",
+      "nahb.org",
+      "census.gov",
+      "fred.stlouisfed.org"
+    ],
+    "posted_iso": "2026-06-10",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
